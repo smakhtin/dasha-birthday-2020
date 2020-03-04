@@ -5,10 +5,12 @@
     <title>Hello, WebVR! • A-Frame</title>
     <meta name="description" content="Hello, WebVR! • A-Frame" />
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
   </head>
 
   <body>
     <a-scene background="color: #FAFAFA" inspector="">
+      <a-entity environment="preset: goaland; dressingAmount: 200"></a-entity>
       <a-assets>
         <a-asset-item
           id="artem-glb"
@@ -82,7 +84,7 @@
         position="-0.0432 0.99003 -5.46568"
         gltf-model="#ira-glb"
       ></a-entity>
-      <a-plane
+<!--       <a-plane
         id="plane"
         geometry="height: 10; width: 10"
         position="0 0 -5"
@@ -91,7 +93,7 @@
         height="4"
         color="#7BC8A4"
         shadow
-      ></a-plane>
+      ></a-plane> -->
       <a-image
         id="mashatema"
         rotation="0 -59.1710703765455 0"
