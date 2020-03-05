@@ -1,90 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Hello, WebVR! • A-Frame</title>
-    <meta name="description" content="Hello, WebVR! • A-Frame" />
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
-  </head>
 
-  <body>
-    <a-scene background="color: #FAFAFA" inspector="">
-      <a-entity environment="preset: goaland; dressingAmount: 200"></a-entity>
-      <a-assets>
-        <a-asset-item
-          id="artem-glb"
-          src="https://cdn.glitch.com/7df774e2-f404-44b7-9699-306032d9b8fb%2Fartem-centered2.glb?v=1583356738098"
-        >
-        </a-asset-item>
-        <a-asset-item
-          id="alisa-glb"
-          src="https://cdn.glitch.com/7df774e2-f404-44b7-9699-306032d9b8fb%2Falisa-centered.glb?v=1583361246682"
-        >
-        </a-asset-item>
-        <a-asset-item
-          id="katya-glb"
-          src="https://cdn.glitch.com/7df774e2-f404-44b7-9699-306032d9b8fb%2Fkatya-centered.glb?v=1583356367753"
-        >
-        </a-asset-item>
-        <a-asset-item
-          id="ira-glb"
-          src="https://cdn.glitch.com/7df774e2-f404-44b7-9699-306032d9b8fb%2Fira-simplified.glb?v=1583362526991"
-        >
-        </a-asset-item>
-        <img
-          id="mashatema-png"
-          src="https://cdn.glitch.com/7df774e2-f404-44b7-9699-306032d9b8fb%2Ftemamasha.png?v=1583358643033"
-        />
-        <img
-          id="anya-png"
-          src="https://cdn.glitch.com/7df774e2-f404-44b7-9699-306032d9b8fb%2FAnya.png?v=1583359565318"
-        />
-        <img
-          id="philipp-png"
-          src="https://cdn.glitch.com/7df774e2-f404-44b7-9699-306032d9b8fb%2FBegoun.png?v=1583360009629"
-        />
-        <img
-          id="patrina-png"
-          src="https://cdn.glitch.com/7df774e2-f404-44b7-9699-306032d9b8fb%2FPatrina.png?v=1583360487364"
-        />
-        <img
-          id="vlad-masha-png"
-          src="https://cdn.glitch.com/7df774e2-f404-44b7-9699-306032d9b8fb%2Fvlad_masha.png?v=1583360821838"
-        />
-      </a-assets>
-      <a-entity
-        id="katya"
-        rotation="0 -30.31 0"
-        position="1.8247 1.12966 -3.88953"
-        gltf-model="#katya-glb"
-        scale="1 1 1"
-      >
-      </a-entity>
-      <a-entity
-        id="artem"
-        rotation="0 30 0"
-        position="-2.25735 1.07134 -3.33216"
-        gltf-model="#artem-glb"
-        scale="0.5 0.5 0.5"
-      >
-      </a-entity>
-      <a-entity
-        id="alisa"
-        rotation="0 109.25789491129181 0"
-        scale="5 5 5"
-        position="-2.23376 0.60602 -0.77714"
-        gltf-model="#alisa-glb"
-      >
-      </a-entity>
-      <a-entity
-        id="ira"
-        scale="4.01433 4.01433 4.01433"
-        rotation="0 174.36079734082674 0"
-        position="-0.0432 0.99003 -5.46568"
-        gltf-model="#ira-glb"
-      ></a-entity>
-<!--       <a-plane
+<head>
+  <meta charset="utf-8" />
+  <title>Hello, WebVR! • A-Frame</title>
+  <meta name="description" content="Hello, WebVR! • A-Frame" />
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+</head>
+
+<body>
+  <a-scene background="color: #FAFAFA" inspector="">
+    <a-entity environment="preset: goaland; dressingAmount: 200"></a-entity>
+    <a-assets>
+      <a-asset-item id="artem-glb"
+        src="https://cdn.glitch.com/7df774e2-f404-44b7-9699-306032d9b8fb%2Fartem-centered2.glb?v=1583356738098">
+      </a-asset-item>
+      <a-asset-item id="alisa-glb"
+        src="https://cdn.glitch.com/7df774e2-f404-44b7-9699-306032d9b8fb%2Falisa-centered.glb?v=1583361246682">
+      </a-asset-item>
+      <a-asset-item id="katya-glb"
+        src="https://cdn.glitch.com/7df774e2-f404-44b7-9699-306032d9b8fb%2Fkatya-centered.glb?v=1583356367753">
+      </a-asset-item>
+      <a-asset-item id="ira-glb"
+        src="https://cdn.glitch.com/7df774e2-f404-44b7-9699-306032d9b8fb%2Fira-simplified.glb?v=1583362526991">
+      </a-asset-item>
+      <img id="mashatema-png"
+        src="https://cdn.glitch.com/7df774e2-f404-44b7-9699-306032d9b8fb%2Ftemamasha.png?v=1583358643033" />
+      <img id="anya-png" src="https://cdn.glitch.com/7df774e2-f404-44b7-9699-306032d9b8fb%2FAnya.png?v=1583359565318" />
+      <img id="philipp-png"
+        src="https://cdn.glitch.com/7df774e2-f404-44b7-9699-306032d9b8fb%2FBegoun.png?v=1583360009629" />
+      <img id="patrina-png"
+        src="https://cdn.glitch.com/7df774e2-f404-44b7-9699-306032d9b8fb%2FPatrina.png?v=1583360487364" />
+      <img id="vlad-masha-png"
+        src="https://cdn.glitch.com/7df774e2-f404-44b7-9699-306032d9b8fb%2Fvlad_masha.png?v=1583360821838" />
+    </a-assets>
+    <a-entity id="katya" rotation="0 -30.31 0" position="1.8247 1.12966 -3.88953" gltf-model="#katya-glb" scale="1 1 1">
+    </a-entity>
+    <a-entity id="artem" rotation="0 30 0" position="-2.25735 1.07134 -3.33216" gltf-model="#artem-glb"
+      scale="0.5 0.5 0.5">
+    </a-entity>
+    <a-entity id="alisa" rotation="0 109.25789491129181 0" scale="5 5 5" position="-2.23376 0.60602 -0.77714"
+      gltf-model="#alisa-glb">
+    </a-entity>
+    <a-entity id="ira" scale="4.01433 4.01433 4.01433" rotation="0 174.36079734082674 0"
+      position="-0.0432 0.99003 -5.46568" gltf-model="#ira-glb"></a-entity>
+    <!--       <a-plane
         id="plane"
         geometry="height: 10; width: 10"
         position="0 0 -5"
@@ -94,37 +55,16 @@
         color="#7BC8A4"
         shadow
       ></a-plane> -->
-      <a-image
-        id="mashatema"
-        rotation="0 -59.1710703765455 0"
-        position="2.36695 0.62047 -3.00891"
-        src="#mashatema-png"
-      ></a-image>
-      <a-image
-        id="anya"
-        rotation="0 64.02688769027924 0"
-        position="2.13833 0.81533 -2.02842"
-        src="#anya-png"
-      >
-      </a-image>
-      <a-image
-        id="philipp"
-        rotation="0 -39.840620284421796 0"
-        position="2.26357 0.50781 -1.29688"
-        src="#philipp-png"
-      >
-      </a-image>
-      <a-image
-        id="patrina"
-        rotation="-179.9998479605043 -8.996583299144186 -179.9998479605043"
-        position="-2.12991 0.40806 -2.12211"
-        src="#patrina-png"
-      ></a-image>
-      <a-image
-        id="vlad-masha"
-        position="-0.40789 2.42647 -4.00553"
-        src="#vlad-masha-png"
-      ></a-image>
-    </a-scene>
-  </body>
+    <a-image id="mashatema" rotation="0 -59.1710703765455 0" position="2.36695 0.62047 -3.00891" src="#mashatema-png">
+    </a-image>
+    <a-image id="anya" rotation="0 64.02688769027924 0" position="2.13833 0.81533 -2.02842" src="#anya-png">
+    </a-image>
+    <a-image id="philipp" rotation="0 -39.840620284421796 0" position="2.26357 0.50781 -1.29688" src="#philipp-png">
+    </a-image>
+    <a-image id="patrina" rotation="-179.9998479605043 -8.996583299144186 -179.9998479605043"
+      position="-2.12991 0.40806 -2.12211" src="#patrina-png"></a-image>
+    <a-image id="vlad-masha" position="-0.40789 2.42647 -4.00553" src="#vlad-masha-png"></a-image>
+  </a-scene>
+</body>
+
 </html>
